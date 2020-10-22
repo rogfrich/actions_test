@@ -1,10 +1,4 @@
-import datetime
-header = """
-# TEST README
+import datetime, os
+with open(f'{datetime.datetime.now()}.txt', 'w') as f:
+    f.write(f'written from {os.path.abspath(__file__)}')
 
-Last edit:\n
-"""
-
-with open("README.md", "w") as f:
-    f.write(header)
-    f.write(str(datetime.datetime.today()))
