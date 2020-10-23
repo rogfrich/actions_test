@@ -10,6 +10,6 @@ jobs:
       - run: git config --global user.email "readme-bot@example.com"
       - run: git config --global user.name "README-bot"
       - run: git add .
-      - run: git commit
+      - run: git commit - "update README.md"
       - run: git push
 
