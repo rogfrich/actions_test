@@ -1,4 +1,5 @@
 import datetime, os
-with open("readme.md") as f:
+with open("README.md") as f:
     pass
 
+print('exiting...')
