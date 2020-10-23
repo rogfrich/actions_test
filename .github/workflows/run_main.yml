@@ -1,0 +1,9 @@
+name: run_main
+on: [push]
+jobs:
+  run_main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - run: python main.py
